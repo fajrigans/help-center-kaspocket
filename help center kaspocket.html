@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pusat Bantuan - Kaspocket</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        details[open] summary .fa-chevron-down {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="about_kaspocket.html" class="text-2xl font-bold text-blue-700"><i class="fas fa-cash-register mr-2"></i>Kaspocket</a>
+            <div>
+                 <a href="about_kaspocket.html" class="bg-blue-600 text-white px-4 py-2 rounded-md font-medium hover:bg-blue-700">Kembali ke Situs Utama</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="bg-blue-700 text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl font-bold mb-4">Pusat Bantuan</h1>
+            <p class="text-lg text-blue-200 mb-8">Punya pertanyaan? Kami siap membantu. Cari jawaban Anda di bawah ini.</p>
+            <div class="max-w-2xl mx-auto">
+                <div class="relative">
+                    <input type="search" placeholder="Contoh: Bagaimana cara cetak struk?" class="w-full p-4 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                    <i class="fas fa-search absolute top-1/2 right-5 -translate-y-1/2 text-gray-400"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-6 py-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-10 text-center">Pertanyaan yang Sering Diajukan (FAQ)</h2>
+
+        <div class="max-w-3xl mx-auto space-y-4">
+            <details class="bg-white p-6 rounded-lg shadow-sm cursor-pointer group">
+                <summary class="flex justify-between items-center font-semibold text-lg">
+                    Bagaimana cara menambahkan produk baru di aplikasi?
+                    <i class="fas fa-chevron-down transition-transform"></i>
+                </summary>
+                <div class="mt-4 text-gray-600">
+                    <p>Untuk menambahkan produk baru, masuk ke menu <strong>'Produk'</strong>, lalu tekan tombol <strong>'+ Tambah Produk'</strong>. Isi nama produk, harga jual, harga modal (opsional), dan jumlah stok awal. Jangan lupa tekan <strong>'Simpan'</strong>.</p>
+                </div>
+            </details>
+
+            <details class="bg-white p-6 rounded-lg shadow-sm cursor-pointer group">
+                <summary class="flex justify-between items-center font-semibold text-lg">
+                    Apakah Kaspocket mendukung pembayaran QRIS?
+                    <i class="fas fa-chevron-down transition-transform"></i>
+                </summary>
+                <div class="mt-4 text-gray-600">
+                    <p>Ya, Kaspocket sudah terintegrasi dengan pembayaran QRIS. Anda dapat mengaktifkannya di menu <strong>'Pengaturan' > 'Metode Pembayaran'</strong>. Saat transaksi, cukup pilih metode bayar QRIS dan pelanggan bisa memindai kode QR yang muncul di layar.</p>
+                </div>
+            </details>
+
+            <details class="bg-white p-6 rounded-lg shadow-sm cursor-pointer group">
+                <summary class="flex justify-between items-center font-semibold text-lg">
+                    Bagaimana cara melihat laporan penjualan harian?
+                    <i class="fas fa-chevron-down transition-transform"></i>
+                </summary>
+                <div class="mt-4 text-gray-600">
+                    <p>Laporan penjualan dapat diakses melalui menu <strong>'Laporan'</strong>. Anda bisa memfilter laporan berdasarkan rentang waktu, seperti harian, mingguan, atau bulanan. Anda juga bisa melihat produk mana yang paling laku terjual.</p>
+                </div>
+            </details>
+            
+            <details class="bg-white p-6 rounded-lg shadow-sm cursor-pointer group">
+                <summary class="flex justify-between items-center font-semibold text-lg">
+                    Bisakah saya menggunakan printer struk bluetooth?
+                    <i class="fas fa-chevron-down transition-transform"></i>
+                </summary>
+                <div class="mt-4 text-gray-600">
+                    <p>Tentu saja. Kaspocket mendukung sebagian besar printer struk thermal bluetooth ukuran 58mm dan 80mm. Pastikan printer sudah terhubung dengan perangkat Anda melalui pengaturan bluetooth sebelum melakukan pencetakan struk dari aplikasi.</p>
+                </div>
+            </details>
+        </div>
+    </main>
+    
+    <section class="bg-gray-200 py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Masih Butuh Bantuan?</h2>
+            <p class="text-gray-700 mb-8 max-w-xl mx-auto">Tim support kami siap membantu Anda dari hari Senin - Sabtu, jam 09:00 - 17:00 WIB.</p>
+            <a href="mailto:support@kaspocket.com" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition-colors">
+                <i class="fas fa-envelope mr-2"></i>Hubungi Kami via Email
+            </a>
+        </div>
+    </section>
+
+</body>
+</html>
